@@ -2,7 +2,7 @@ import requests
 import json
 
 url = "http://127.0.0.1:5000/predict"
-files = {'image': open('pic.png', 'rb')}
+files = {'image': open('input.png', 'rb')}
 response = requests.post(url=url, files=files)
 
 
